@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .line {
+        width: 100%;
+        background-color: blue;
+        height: 25px;
+        margin-bottom: 10px;
+
+        transition: width;
+        transition-duration: 1s;
+      }
+
+      body:hover .line {
+        width: 20px;
+        background-color: cadetblue;
+      }
+
+      .ease {
+        transition-timing-function: ease;
+      }
+
+      .linear {
+        transition-timing-function: linear;
+      }
+
+      .ease-in {
+        transition-timing-function: ease-in;
+      }
+
+      .ease-out {
+        transition-timing-function: ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line ease"></div>
+    <div class="line linear"></div>
+    <div class="line ease-in"></div>
+    <div class="line ease-out"></div>
+  </body>
+</html>
